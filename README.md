@@ -1,5 +1,5 @@
 # [107-2] Web Programming Final Project
-(Group ) Ethereal: Manage your bookmarks with grace.
+(Group 21) Ethereal: Manage your bookmarks with grace.
 ***
 
 # Ethereal :  Manage your bookmarks with grace.
