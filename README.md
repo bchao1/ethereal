@@ -10,7 +10,7 @@ B06901104 電機二 **趙崇皓** ｜ B06901061 電機二 **王廷峻**
 ## 連結
 Github 連結：https://github.com/Mckinsey666/ethereal
    
-Demo 影片連結：（稍後補上）
+Demo 影片連結：https://www.youtube.com/watch?v=25s9Pkz93C4&feature=youtu.be
 
 ## 目錄
 - 緣起
