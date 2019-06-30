@@ -1,4 +1,8 @@
-# Ethereal : Your lightweight bookmark editor.
+# [107-2] Web Programming Final Project
+(Group ) Ethereal: Manage your bookmarks with grace.
+***
+
+# Ethereal :  Manage your bookmarks with grace.
 > 線上瀏覽器書籤編輯平台。從瀏覽器匯入、編輯、儲存、並發布你的書籤，同時也可以收藏別人發布的書籤！
 ## 作者
 B06901104 電機二 **趙崇皓** ｜ B06901061 電機二 **王廷峻**
