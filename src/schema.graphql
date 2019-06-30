@@ -1,0 +1,141 @@
+type Query {
+    user(userID: String!) : User!
+    users(name: String!) : [User!]
+    collections(title: String, collectionId: String) : [Collection!]
+    userCollections(userID: String!) : [Collection!]
+}
+
+type Mutation{
+    addBookmark(collectionId: String!, data: addBookmarkInput!): Bookmark!
+    deleteBookmark(id: String!): Bookmark!
+    importCollections(userID: String!, data: importCollectionsInput!): String
+    addCollection(userID: String!, collectionId: String, data: addCollectionInput!): String
+    updateCollection(collectionId: String!, data: updateCollectionInput!): Collection!
+    deleteCollection(collectionId: String!): String
+    createUser(data: createUserInput!): createUserPayload!
+    loginCheck(data: loginInput!): loginCheckPayload!
+}
+
+type Subscription{
+    addBookmarkSub: addBookmarkSubPayload!
+    deleteBookmarkSub: deleteBookmarkSubPayload!
+    importCollectionSub: importCollectionPayload!
+}
+
+input addBookmarkInput{
+    url: String!
+    title: String!
+}
+
+input updateCollectionInput{
+    title: String
+    description: String
+    state: Int
+    publishedTime: String
+}
+
+input importCollectionsInput{
+    collections: [CollectionInput!]
+}
+
+input addCollectionInput{
+    collections: favoriteCollectionInput
+}
+
+type User {
+    id: String!
+    name: String!
+    email: String!
+    password: String!
+    avatar: String!
+    collections(queryPublished: Boolean): [Collection!]
+    followers: [User!]
+    following: [User!]
+}
+input UserInput {
+    name: String!
+    avatar: String!
+}
+
+type Collection {
+    id: String!
+    author: User!
+    title: String!
+    description: String!
+    likes: Int!
+    tags: [String!]
+    bookmarks: [Bookmark!]!
+    state: Int!
+    publishedTime: String
+}
+input CollectionInput{
+    id: String!
+    author: UserInput!
+    title: String!
+    description: String!
+    tags: [String!]
+    bookmarks: [BookmarkInput!]
+    state: Int!
+    publishedTime: String
+}
+input favoriteCollectionInput{
+    title: String!
+    description: String!
+    tags: [String!]
+    bookmarks: [BookmarkInput!]
+}
+
+input createUserInput{
+    id: String!
+    name: String!
+    email: String!
+    password: String!
+    avatar: String!
+}
+
+type Bookmark {
+    collectionId: String!
+    id: String!
+    title: String!
+    description: String!
+    url: String!
+    icon: String!
+    shortUrl: String!
+}
+
+input loginInput{
+    email: String!
+    password: String!
+}
+
+input BookmarkInput {
+    id: String!
+    title: String!
+    description: String!
+    url: String!
+    icon: String!
+    shortUrl: String!
+}
+
+type deleteBookmarkSubPayload{
+    data: Bookmark!
+}
+type addBookmarkSubPayload {
+    data: Bookmark!
+}
+
+type importCollectionPayload {      
+    bookmarks: [Bookmark!]
+    collections: [Collection!]
+}
+
+type loginCheckPayload
+{
+    status: String!
+    id: String
+}
+
+type createUserPayload
+{
+    status: String!
+}
