@@ -43,8 +43,8 @@ const collections = [
     {
         id: "200",
         authorID: "2",
-        title: "haha",
-        description: "poop",
+        title: "234",
+        description: "2314",
         tags: ['x', 'z'],
         likes: 20,
         state: COLLECTIONSTATE.PUBLISHED,
@@ -53,7 +53,7 @@ const collections = [
     {
         id: "300",
         authorID: "3",
-        title: "boobies",
+        title: "234s",
         description: "haha",
         tags: ['y', 'z'],
         likes: 5,
@@ -63,8 +63,8 @@ const collections = [
     {
         id: "400",
         authorID: "1",
-        title: "shit",
-        description: "fuck",
+        title: "2134",
+        description: "2134",
         tags: ['z'],
         likes: 4,
         state: COLLECTIONSTATE.PUBLISHED,
@@ -73,8 +73,8 @@ const collections = [
     {
         id: "700",
         authorID: "1",
-        title: "shit!!!",
-        description: "fuck!!!!!",
+        title: "1234",
+        description: "2135!",
         tags: ['z'],
         likes: 4,
         state: COLLECTIONSTATE.FAVORITE,
@@ -83,8 +83,8 @@ const collections = [
     {
         id: "500",
         authorID: "3",
-        title: "shvdsfit",
-        description: "fucvdk",
+        title: "123",
+        description: "123",
         tags: ['z'],
         likes: 3214,
         state: COLLECTIONSTATE.PUBLISHED,
@@ -93,8 +93,8 @@ const collections = [
     {
         id: "600",
         authorID: "2",
-        title: "shffit",
-        description: "f321uck",
+        title: "123",
+        description: "312",
         tags: ['z'],
         likes: 3214,
         state: COLLECTIONSTATE.PUBLISHED,
@@ -109,8 +109,8 @@ const bookmarks = [
         url: "haha",
         title: "abc",
         description: "456",
-        shortUrl: "poop.com",
-        icon: "yucky.jpg"
+        shortUrl: "123.com",
+        icon: "123.jpg"
     },
     {
         id: "b",
@@ -118,8 +118,8 @@ const bookmarks = [
         url: "haha",
         title: "def",
         description: "789",
-        shortUrl: "boobs.com",
-        icon: "sexy.jpg"
+        shortUrl: "456.com",
+        icon: "456.jpg"
     },
     {
         id: "c",
@@ -181,19 +181,19 @@ const comments = [
     {
         collectionId: "100",
         authorId: "2",
-        content: "piece of shit",
+        content: "good",
         time: "12:00",
     },
     {
         collectionId: "200",
         authorId: "1",
-        content: "piece of good shit",
+        content: "bad",
         time: "1:00",
     },
     {
         collectionId: "300",
         authorId: "1",
-        content: "fucking bitch",
+        content: "great",
         time: "7:00",
     },
     {

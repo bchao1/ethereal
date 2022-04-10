@@ -16,7 +16,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 
 mongoose.set('useFindAndModify', false);
-mongoose.connect('mongodb+srv://server:12345@webmidterm-hnka6.gcp.mongodb.net/test?retryWrites=true&w=majority', {	
+mongoose.connect('mongodb+srv://test:test@cluster0.9ozqw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {	
     useNewUrlParser: true
 })
 /*
