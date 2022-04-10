@@ -20,7 +20,7 @@
     "path": "^0.12.7",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
-    "validator": "^11.0.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
